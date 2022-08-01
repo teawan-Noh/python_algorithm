@@ -6,7 +6,7 @@
 def find_max_plus_or_multiply(array):
     total = 0
     for num in array:
-        if num < 2 or total == 0:
+        if num < 2 or total < 2:
             total += num
         else:
             total *= num
